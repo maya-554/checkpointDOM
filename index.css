@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{ width: 100%;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    color: aqua;
+   padding-top: 10px;
+   position: fixed;
+   box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
+}
+nav .bxs-cart-add{ 
+cursor: pointer;
+font-size: 35px;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.title{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 20px;
+}
+.prix{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+img{
+    width: 100%;
+
+    }
+.img_size{
+    width: 200px;
+    margin-inline: 100px;
+    margin-top: 100px;
+
+}
+.dispo{
+    
+    display: flex;
+    padding-inline: 100px;
+    flex-wrap: wrap;
+
+}
+#icon2{
+    font-size: 30px;
+    color: aqua;
+    border: blue solid 1px;
+   
+    background-color: blue;
+    cursor: pointer;
+}
+footer{
+    background-color: blue;
+    height: 100px;
+    margin-top: 70px;
+    padding-top: 50px;
+}
+.message{
+    text-align: center;
+    color: aqua;
+}
+span{
+    color: blue;
+}
+.prix span{
+    color: black;
+}
+.img_size:hover{
+padding: 5px;
+border: 1px solid blue;
+transition: 0.3s;
+}
+@media screen and (max-width: 600px){
+   
+    .dispo{
+    
+        display: flex;
+        padding-inline: 20px;
+        align-items: center;
+    
+    }
+    nav{
+        display: flex;
+        align-items: center;
+    }
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    min-height: 100vh;
+    box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
+    background-color: white;
+    color: black;
+    font-size: small;
+    transition: 0.2s;
+
+}
+.title-cart{
+    margin-top: 10px;
+    text-align: center;
+}
+.cart-content{
+    display: grid; 
+    grid-template-columns: 32% 50% 18%;
+    margin-top: 30px;
+    align-items: center;
+    gap: 2px;
+}
+.name-product{
+    color: blue;
+}
+.bxs-trash{
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.quantite{
+    text-align: center;
+    width: 30px;
+    border: none;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    border-top: solid 1px black;
+    margin-inline: 15px;
+
+}
+.total-title{
+    font-size: 18px;
+}
+.total-price{
+    margin-left: 20px;
+    margin-top: 6px;
+    color: grey;
+}
+.price{
+    color: grey;
+}
+.cart.active{
+    right: 0;
+}
+.btn{
+ padding: 10px;
+ width: 100px;
+ background-color: blue;
+ margin-top: 100px;
+ margin-left: 130px;
+ border: none;
+ font-weight:bold ;
+ color: aqua;
+}
+.btn:hover{
+    background-color: aqua;
+    color: blue;
+    transition: 0.2s;
+}
+#close{
+    position: absolute;
+    top: 5px;
+    font-size: 35px;
+    left: 5px;
+    cursor: pointer;
+}
